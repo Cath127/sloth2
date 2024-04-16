@@ -75,6 +75,8 @@ body.correct {
     font-size: 1.5rem;
     font-weight: bold;
     padding: 10px 20px;
+    background-color: #edddc6;
+    color: #013220;
   }
   
   .controls {
