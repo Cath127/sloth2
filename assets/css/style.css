@@ -8,7 +8,7 @@
 :root {
     --hue-neutral: 200;
     --hue-wrong: 0;
-    --hue-correct: 90;
+    --hue-correct: 120;
 }
 
 body {
@@ -34,12 +34,11 @@ body.correct {
   .container {
     width: 600px;
     max-width: 70%;
-    background-color: white;
     border-radius: 5px;
     padding: 10px;
     box-shadow: 0 0 10px 2px;
     opacity: 0.9;
-    background-color: #03c03c;
+    background-color: #edddc6;
   }
 
   .btn-grid {
@@ -54,8 +53,8 @@ body.correct {
     background-color: hsl(var(--hue), 100%, 50%);
     border-radius: 5px;
     padding: 5px 10px;
-    color: white;
-    outline: none;
+    color: #fff;
+    font-weight: 600;
   }
 
   .btn:hover {
@@ -75,7 +74,7 @@ body.correct {
     font-size: 1.5rem;
     font-weight: bold;
     padding: 10px 20px;
-    background-color: #edddc6;
+    background-color: #66ff00;
     color: #013220;
   }
   
@@ -91,6 +90,7 @@ body.correct {
 
 #question {
     text-align: center;
+    font-weight: bold;
 }   
 
 h1 {
