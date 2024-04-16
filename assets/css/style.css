@@ -10,6 +10,8 @@
 }
 
 body {
+  background: url(../images/sloth-background.png) no-repeat top center;
+  background-size: cover;
     --hue: var(--hue-neutral);
     padding: 0;
     margin: 0;
@@ -18,7 +20,8 @@ body {
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background-color: hsl(var(--hue), 100%, 20%);
+
+    /* background-color: hsl(var(--hue), 100%, 20%); */
 }
 
 body.correct {
@@ -30,12 +33,14 @@ body.correct {
   }
 
   .container {
-    width: 800px;
-    max-width: 80%;
+    width: 600px;
+    max-width: 70%;
     background-color: white;
     border-radius: 5px;
     padding: 10px;
     box-shadow: 0 0 10px 2px;
+    opacity: 0.9;
+    background-color: bisque;
   }
 
   .btn-grid {
@@ -87,3 +92,15 @@ body.correct {
 #question {
     text-align: center;
 }   
+
+h1 {
+  text-align: center;
+}
+
+.sloth-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding-bottom: 20px;
+}
