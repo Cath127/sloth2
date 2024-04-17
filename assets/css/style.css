@@ -41,7 +41,8 @@ body {
     font-weight: 600;
   }
 
-  .start-btn:hover, 
+  .start-btn:hover,
+  .rules-btn:hover, 
   .next-btn:hover {
     background-color: yellow;
     color: black;
@@ -56,25 +57,24 @@ body {
     background-color: red;
   }
 
-  #start-btn, 
-  #open-modal,
+  .start-btn, 
+  .rules-btn,
   #close-modal, 
-  #next-btn, 
-  #play-again-btn {
+  #next-btn {
     font-size: 1rem;
     font-weight: bold;
     background-color: #6c594c;
     color: #fff;
     width: 60%;    
+    padding-left: 0;
   }
 
-  /* #start-btn,
-  #open-modal {
-    text-align: center;
-    display: inline-block;
-  } */
-
+.start-btn,
+.rules-btn {
   
+} 
+
+
   .controls {
     display: flex;
     justify-content: center;

@@ -98,7 +98,7 @@ const questions = [
       ],
   },
   {
-      question: "How many hours does it take for a sloth to digest a meal",
+      question: "How many hours does it take for a sloth to digest a meal?",
   
       answers: [
         { text: "6-8 hours", correct: false },
