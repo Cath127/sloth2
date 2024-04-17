@@ -54,7 +54,7 @@ body {
     color: black;
   }
   
-  .btn.wrong {
+  .btn.incorrect {
     background-color: red;
   }
 
@@ -80,6 +80,7 @@ body {
     text-align: center;
     font-weight: bold;
     font-size: medium;
+    padding-top: 1rem;
 }   
 
 h1 {
