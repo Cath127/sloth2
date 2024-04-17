@@ -56,13 +56,24 @@ body {
     background-color: red;
   }
 
-  #start-btn, #next-btn, #play-again-btn {
+  #start-btn, 
+  #open-modal,
+  #close-modal, 
+  #next-btn, 
+  #play-again-btn {
     font-size: 1rem;
     font-weight: bold;
     background-color: #6c594c;
     color: #fff;
-    width: 60%;
+    width: 60%;    
   }
+
+  /* #start-btn,
+  #open-modal {
+    text-align: center;
+    display: inline-block;
+  } */
+
   
   .controls {
     display: flex;
@@ -86,6 +97,11 @@ h1 {
   font-size: 3rem;
 }
 
+h2 {
+  text-decoration: underline;
+}
+
+
 .sloth-logo {
   display: block;
   margin-left: auto;
@@ -99,3 +115,30 @@ h1 {
   margin-left: auto;
   margin-right: auto;
 }
+
+ /*---------- MODAL ----------*/
+/* created using tutorial - https://www.youtube.com/watch?v=XH5OW46yO8I */
+
+#modal-container {
+ background-color: #fff;
+ position: fixed;
+ width: 60vw;
+ height: 60vh;
+ text-align: center;
+ display:flex;
+ justify-content: center;
+ align-items: center;
+ border-radius: 0.5rem;
+ border: 0.2rem solid #6c594c;
+ opacity: 0;
+ pointer-events: none;
+}
+
+.modal {
+  width: 70%;
+  text-align: center;
+  font-size: 1rem;
+  color: #00563b;
+}
+
+

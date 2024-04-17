@@ -22,15 +22,26 @@
         </div>
         <div class="controls">
             <button id="start-btn" class="start-btn btn">Start</button>
+            <button id="open-modal" class="btn">Rules</button>
             <button id="next-btn" class="next-btn btn hide">Next</button>
         </div>
     </div>
 
-    <div id="results-container" >
-        <p id="results" class="hide"> ? </p>
-        <button id="play-again-button" class="play-again-btn btn hide" >Play Again</button>
-     </div>
+    <div class="modal-container"
+        <div id = "modal-container">
+        <div class="modal">
+            <h2>How to Play</h2>
+            
+            <p>There are 10 questions.</p>
+            <p>If you answer right the box turns green but if you answer wrong the box turns red.</p>
+            <p>Can you get all 10 correct to become a Super Sloth?</p>
+            <p>Good luck</p>
 
+            <button id="close-modal">Close Me</button>
+        </div>
+        </div>
+    </div>
     <script src="script.js"></script>
+    <script src="assets/js/modal.js"></script>
 </body>
 </html>
