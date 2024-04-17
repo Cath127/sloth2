@@ -33,10 +33,8 @@ body {
   }
 
   .btn {
-    /* --hue: var(--hue-neutral); */
     border: 2px solid #fff;
     background-color: #00563b;
-    /* background-color: aqua; */
     border-radius: 0.5rem;
     padding: 0.5rem 1rem;
     color: #fff;
@@ -58,12 +56,12 @@ body {
     background-color: red;
   }
 
-  .start-btn, .next-btn. .play-again-btn {
-    font-size: 1.5rem;
+  #start-btn, #next-btn, #play-again-btn {
+    font-size: 1rem;
     font-weight: bold;
-    padding: 1rem 2rem;
     background-color: #6c594c;
     color: #fff;
+    width: 60%;
   }
   
   .controls {
