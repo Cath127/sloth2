@@ -8,6 +8,7 @@ const modalContainer = document.getElementById("modal-container")
 const closeModal = document.getElementById("close-modal")
 
 openModal.addEventListener("click", () => {
+    console.log('You clicked the modal')
     modalContainer.classList.add("show");
 });
 

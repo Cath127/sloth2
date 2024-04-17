@@ -71,7 +71,7 @@ body {
 
 .start-btn,
 .rules-btn {
-  
+  display: block;
 } 
 
 
@@ -119,7 +119,7 @@ h2 {
  /*---------- MODAL ----------*/
 /* created using tutorial - https://www.youtube.com/watch?v=XH5OW46yO8I */
 
-#modal-container {
+.modal-container {
  background-color: #fff;
  position: fixed;
  width: 60vw;
@@ -141,4 +141,7 @@ h2 {
   color: #00563b;
 }
 
+.show {
+  opacity: 1 !important;
+}
 
