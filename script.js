@@ -7,13 +7,13 @@ const answerButtonsElement = document.getElementById('answer-buttons')
 
 let shuffledQuestions, currentQuestionIndex
 
-startButton.addEventListener('click', startGame)
+startButton.addEventListener('click', startQuiz)
 nextButton.addEventListener('click', () => {
   currentQuestionIndex++
   setNextQuestion()
 })
 
-function startGame() {
+function startQuiz() {
   startButton.classList.add('hide')
   homeContainer.classList.add('hide')
   shuffledQuestions = questions.sort(() => Math.random() - .5)
@@ -72,6 +72,12 @@ function setStatusClass(element, correct) {
     element.classList.add('incorrect')
   }
 }
+
+// if (selectAnswer === currentQuestion.answer)
+//   e.target.style.backgroundColor = 'green'
+// } else {
+//   e.target.style.backgroundColor = 'red'
+//  }
 
 function clearStatusClass(element) {
   element.classList.remove('correct', 'incorrect')

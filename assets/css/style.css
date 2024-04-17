@@ -58,7 +58,7 @@ body {
     background-color: red;
   }
 
-  .start-btn, .next-btn {
+  .start-btn, .next-btn. .play-again-btn {
     font-size: 1.5rem;
     font-weight: bold;
     padding: 1rem 2rem;
