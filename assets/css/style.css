@@ -4,7 +4,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/*  */:root {
+:root {
     --hue-neutral: 200;
     --hue-wrong: 0;
     --hue-correct: 120;
@@ -49,8 +49,10 @@ body {
     font-weight: 600;
   }
 
-  .btn:hover {
-    border-color: black;
+  .start-btn:hover, 
+  .next-btn:hover {
+    background-color: yellow;
+    color: black;
   }
 
   .btn.correct {
@@ -66,8 +68,8 @@ body {
     font-size: 1.5rem;
     font-weight: bold;
     padding: 1rem 2rem;
-    background-color: #ffff00;
-    color: #013220;
+    background-color: #6c594c;
+    color: #fff;
   }
   
   .controls {
