@@ -1,103 +1,53 @@
 
-*, *::before, ::after {
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap');
 
+/* Global site */
 body {
-    background: url(../images/sloth-background.png) no-repeat top center;
-    background-size: cover;
-    padding: 0;
-    margin: 0;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    font-size: 62.5%;
+  background: url(../images/sloth-background.png) no-repeat top center;
+  background-size: cover;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  font-size: 62.5%;
 }
 
-  .container {
-    display: flex;
-    flex-direction: column;
-    width: 600px;
-    max-width: 70%;
-    border-radius: 0.5rem;
-    padding: 1rem;
-    opacity: 0.9;
-    background-color: #edddc6;
+/* Home Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  max-width: 70%;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  opacity: 0.9;
+  background-color: #edddc6;
   }
 
-  .btn-grid {
-    display: grid;
-    gap: 1rem;
-    margin: 2rem 0;
-  }
+/* Home Container Elements */
+.sloth-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding-bottom: 2rem;
+}
 
-  .btn {
-    border: 0.2rem solid #fff;
-    background-color: #00563b;
-    border-radius: 0.5rem;
-    padding: 0.5rem 1rem;
-    color: #fff;
-    font-weight: 600;
-  }
-
-  .start-btn:hover,
-  .rules-btn:hover, 
-  .next-btn:hover 
- {
-    background-color: yellow;
-    color: black;
-  }
-
-  .btn.correct {
-    background-color: greenyellow;
-    color: black;
-  }
-  
-  .btn.incorrect {
-    background-color: red;
-  }
-
-  .btn.original-colour {
-    background-color: #00563b;;
-  }
-
-  .start-btn, 
-  .rules-btn,
-  #close-modal, 
-  #next-btn {
-    font-size: 1rem;
-    font-weight: bold;
-    background-color: #6c594c;
-    color: #fff;
-    width: 60%;    
-    padding-left: 0;
-    text-align: center;
-  }
-
-.start-btn {
- margin: 0.5rem;
-} 
-
-  .controls {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .hide {
-    display: none;
-  }
-
+/* Question styling */
 #question {
-    text-align: center;
-    font-weight: bold;
-    font-size: medium;
-    padding-top: 1rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: medium;
+  padding-top: 1rem;
 }  
 
+/* Headings */
 h1 {
   text-align: center;
   font-size: 3rem;
@@ -108,12 +58,29 @@ h2 {
 }
 
 
-.sloth-logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  padding-bottom: 30px;
+/* Grid button layout used for answer buttons */
+.btn-grid {
+  display: grid;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+  /* Buttons */
+.btn {
+  border: 0.2rem solid #fff;
+  background-color: #00563b;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  font-weight: 600;
+  }
+
+.start-btn:hover,
+.rules-btn:hover, 
+.next-btn:hover 
+{
+  background-color: yellow;
+  color: black;
 }
 
 #answer-buttons {
@@ -122,23 +89,57 @@ h2 {
   margin-right: auto;
 }
 
+.btn.correct {
+  background-color: greenyellow;
+  color: black;
+}
+  
+.btn.incorrect {
+  background-color: red;
+}
 
+.start-btn, 
+.rules-btn,
+#close-modal, 
+#next-btn {
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #6c594c;
+  color: #fff;
+  width: 60%;    
+  padding-left: 0;
+  text-align: center;
+}
+
+.start-btn {
+ margin: 0.5rem;
+} 
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+.hide {
+  display: none;
+  }
  /*---------- MODAL ----------*/
-/* created using tutorial - https://www.youtube.com/watch?v=XH5OW46yO8I */
+/* created using tutorial - https://www.youtube.com/watch?v=XH5OW46yO8I and customised*/
 
 .modal-container {
-background-color: #fff;
- position: fixed;
- width: 80%;
- height: 70%;
- text-align: center;
- border-radius: 0.5rem;
+  background-color: #fff;
+  position: fixed;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 70%;
+  text-align: center;
+  border-radius: 0.5rem;
   border: 0.2rem solid #6c594c;
- display:flex;
- justify-content: center;
- align-items: center;
- opacity: 0;
- pointer-events: none;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .modal-container.show {
@@ -151,8 +152,7 @@ background-color: #fff;
   width: 60%;
   text-align: center;
   font-size: 1rem;
-  color: #00563b;
-  
+  color: #00563b;  
   padding-bottom: 1rem;
 }
 
