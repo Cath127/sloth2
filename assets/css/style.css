@@ -59,6 +59,10 @@ body {
     background-color: red;
   }
 
+  .original-colour {
+    background-color: #00563b;;
+  }
+
   .start-btn, 
   .rules-btn,
   #close-modal, 
