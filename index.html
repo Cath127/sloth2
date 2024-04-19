@@ -1,35 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="assets/css/style.css" rel="stylesheet">
-    <title>Super Sloth Quiz</title>
+  <!--Meta tags-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A Quiz about sloths">
+  <meta name="keywords" content= "quiz, quiz game, multiple choice, sloth">
+
+  <!--CSS link-->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!--Title Page-->
+  <title>Super Sloth Quiz</title>
 </head>
 <body>
-    <div class="container">
-        <div id="home-container">
-            <h1>Super Sloth Quiz</h1><img src="assets/images/small-sloth-logo.png" class="sloth-logo center" alt="picture of a cartoon sloth hanging upside down in a tree wearing a cape">
+  <!--Welcome Container with title and sloth logo-->
+  <div class="container">
+    <div id="home-container">
+      <h1>Super Sloth Quiz</h1><img src="assets/images/small-sloth-logo.png" class="sloth-logo center" alt="picture of a cartoon sloth hanging upside down in a tree wearing a cape">
+    </div>
+  <!--Question Container with question and 4 possible answers-->
+    <div id="question-container" class="hide">
+      <div id="question">Question</div>
+        <div id="answer-buttons" class="btn-grid">
+          <button class="btn">Answer 1</button>
+          <button class="btn">Answer 2</button>
+          <button class="btn">Answer 3</button>
+          <button class="btn">Answer 4</button>
         </div>
-        <div id="question-container" class="hide">
-            <div id="question">Question</div>
-            <div id="answer-buttons" class="btn-grid">
-                <button class="btn">Answer 1</button>
-                <button class="btn">Answer 2</button>
-                <button class="btn">Answer 3</button>
-                <button class="btn">Answer 4</button>
-            </div>
-        </div>
-        <div class="controls">
+    </div>
+        <!--Buttons to start, rules and for the next question-->
+          <div class="controls">
             <button id="start-btn" class="start-btn btn">Start</button>
             <button id="open-modal" class="rules-btn btn">Rules</button>
             <button id="next-btn" class="next-btn btn hide">Next</button>
-        </div>
-    </div>
+          </div>
+  </div>
 
-    <div class="modal-container"
-    id="modal-container">
-    <div class="modal">
+    <!--Modal for the quiz rules-->
+    <div class="modal-container" id="modal-container">
+      <div class="modal">
         <h2>How to Play</h2>
 
         <p>There are 10 questions.</p>
@@ -39,9 +49,10 @@
         <button id="close-modal">
             Close Me
         </button>
+      </div>
     </div>
-</div>
-
+    
+    <!--Javascript links-->
     <script src="assets/js/script.js"></script>
     <script src="assets/js/modal.js"></script>
     
