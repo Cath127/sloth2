@@ -45,7 +45,8 @@ body {
 
   .start-btn:hover,
   .rules-btn:hover, 
-  .next-btn:hover {
+  .next-btn:hover 
+ {
     background-color: yellow;
     color: black;
   }
@@ -95,7 +96,7 @@ body {
     font-weight: bold;
     font-size: medium;
     padding-top: 1rem;
-}   
+}  
 
 h1 {
   text-align: center;
@@ -121,6 +122,7 @@ h2 {
   margin-right: auto;
 }
 
+
  /*---------- MODAL ----------*/
 /* created using tutorial - https://www.youtube.com/watch?v=XH5OW46yO8I */
 
@@ -130,6 +132,8 @@ background-color: #fff;
  width: 80%;
  height: 70%;
  text-align: center;
+ border-radius: 0.5rem;
+  border: 0.2rem solid #6c594c;
  display:flex;
  justify-content: center;
  align-items: center;
@@ -148,8 +152,7 @@ background-color: #fff;
   text-align: center;
   font-size: 1rem;
   color: #00563b;
-  border-radius: 0.5rem;
-  border: 0.2rem solid #6c594c;
+  
   padding-bottom: 1rem;
 }
 
