@@ -125,10 +125,10 @@ h2 {
 /* created using tutorial - https://www.youtube.com/watch?v=XH5OW46yO8I */
 
 .modal-container {
- background-color: #fff;
+background-color: #fff;
  position: fixed;
- width: 60vw;
- height: 60vh;
+ width: 80%;
+ height: 70%;
  text-align: center;
  display:flex;
  justify-content: center;
@@ -137,17 +137,20 @@ h2 {
  pointer-events: none;
 }
 
+.modal-container.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
 .modal {
-  width: 70%;
+  width: 60%;
   text-align: center;
   font-size: 1rem;
   color: #00563b;
   border-radius: 0.5rem;
- border: 0.2rem solid #6c594c;
-}
-
-.show {
-  opacity: 1 !important;
+  border: 0.2rem solid #6c594c;
+  padding-bottom: 1rem;
 }
 
 

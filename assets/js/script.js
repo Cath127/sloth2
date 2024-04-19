@@ -75,12 +75,6 @@ function setStatusClass(element, correct) {
   }
 }
 
-// if (selectAnswer === currentQuestion.answer)
-//   e.target.style.backgroundColor = 'green'
-// } else {
-//   e.target.style.backgroundColor = 'red'
-//  }
-
 function clearStatusClass(element) {
   element.classList.remove('correct', 'incorrect')
 }
