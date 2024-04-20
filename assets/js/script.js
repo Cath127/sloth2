@@ -76,9 +76,12 @@ function selectAnswer(e) {
   } else {
     // startButton.innerText = 'Restart'
     // startButton.classList.remove('hide')
-    resultContainerElement.classList.remove('hide');
+    // resultContainerElement.classList.remove('hide');
+   
   }
 };
+
+//  let setStatusClass = selectAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
 
 function setStatusClass(element, correct) {
   clearStatusClass(element)
@@ -90,9 +93,15 @@ function setStatusClass(element, correct) {
 };
 
 
+// if (selectedButton === correct) {
+//   button.classList.add("correct");
+// } else {
+//   button.classList.add("incorrect");
+// }
+
 //creating div tags for icons
-let answerCorrect ='<div class="happy face><i class="fa-regular fa-face-smile"></i></div>';
-let answerInCorrect ='<div class="sad face><i class="fa-regular fa-face-frown"></i>'
+let correct ='<div class="happy face><i class="fa-regular fa-face-smile"></i></div>';
+let inCorrect ='<div class="sad face><i class="fa-regular fa-face-frown"></i>'
 
 function clearStatusClass(element) {
   element.classList.remove('correct', 'incorrect')
