@@ -27,9 +27,11 @@ function startQuiz() {
   startButton.classList.add('hide')
   homeContainer.classList.add('hide')
   rulesButton.classList.add('hide')
-  shuffledQuestions = questions.sort(() => Math.random() - .5)
-  currentQuestion = 0
   questionContainerElement.classList.remove('hide')
+  shuffledQuestions = questions.sort(() => Math.random() - .5)
+  currentQuestion = 0;
+  score = 0;
+  // questionContainerElement.classList.remove('hide')
   showNextQuestion()
 };
 
