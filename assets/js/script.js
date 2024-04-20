@@ -16,7 +16,7 @@ let score = 0;
 
 // let shuffledQuestions, currentQuestionIndex;
 
-// Start quiz and display next question when buttons are clicked.//
+// Start quiz and display next question event listeners when buttons are clicked.//
 startButton.addEventListener('click', startQuiz);
 nextButton.addEventListener('click', () => {
   currentQuestion++
@@ -28,7 +28,7 @@ function startQuiz() {
   homeContainer.classList.add('hide')
   rulesButton.classList.add('hide')
   questionContainerElement.classList.remove('hide')
-  shuffledQuestions = questions.sort(() => Math.random() - .5)
+  shuffledQuestions = questions.sort(() => Math.random() - .5)  //shuffle questions//
   currentQuestion = 0;
   score = 0;
   // questionContainerElement.classList.remove('hide')
@@ -40,6 +40,7 @@ function showNextQuestion() {
   showQuestion(shuffledQuestions[currentQuestion])
 };
 
+// may change //
 function showQuestion(question) {
   questionElement.innerText = question.question
   question.answers.forEach(answer => {
@@ -54,11 +55,12 @@ function showQuestion(question) {
   })
 };
 
+// may change //
 function resetState() {
-  clearStatusClass(document.body)
+  // clearStatusClass(document.body)
   nextButton.classList.add('hide')
   while (answerButtonsElement.firstChild) {
-    answerButtonsElement.removeChild(answerButtonsElement.firstChild)
+    answerButtonsElement.removeChild(answerButtonsElement.firstChild);
   }
 };
 
