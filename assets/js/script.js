@@ -77,7 +77,7 @@ function selectAnswer(e) {
     // startButton.innerText = 'Restart'
     // startButton.classList.remove('hide')
     // resultContainerElement.classList.remove('hide');
-   
+    window.location.href = 'end.html';
   }
 };
 
