@@ -20,7 +20,7 @@ let score = 0;
 startButton.addEventListener('click', startQuiz);
 nextButton.addEventListener('click', () => {
   currentQuestion++
-  setNextQuestion()
+  showNextQuestion()
 });
 
 function startQuiz() {
@@ -30,10 +30,10 @@ function startQuiz() {
   shuffledQuestions = questions.sort(() => Math.random() - .5)
   currentQuestion = 0
   questionContainerElement.classList.remove('hide')
-  setNextQuestion()
+  showNextQuestion()
 };
 
-function setNextQuestion() {
+function showNextQuestion() {
   resetState()
   showQuestion(shuffledQuestions[currentQuestion])
 };
