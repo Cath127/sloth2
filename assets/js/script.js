@@ -6,7 +6,7 @@ const nextButton = document.getElementById('next-btn');
 const questionContainerElement = document.getElementById('question-container');
 const questionElement = document.getElementById('question');
 const answerButtonsElement = document.getElementById('answer-buttons');
-const resultContainerElement = document.getElementById('result-container');
+const resultContainerElement = document.getElementById('results-container');
 const playAgainButton = document.getElementById('play-again-btn');
 
 //Variables for game function
@@ -74,8 +74,9 @@ function selectAnswer(e) {
   if (shuffledQuestions.length > currentQuestion + 1) {
     nextButton.classList.remove('hide')
   } else {
-    startButton.innerText = 'Restart'
-    startButton.classList.remove('hide')
+    // startButton.innerText = 'Restart'
+    // startButton.classList.remove('hide')
+    resultContainerElement.classList.remove('hide');
   }
 };
 
@@ -88,6 +89,10 @@ function setStatusClass(element, correct) {
   }
 };
 
+
+//creating div tags for icons
+let answerCorrect ='<div class="happy face><i class="fa-regular fa-face-smile"></i></div>';
+let answerInCorrect ='<div class="sad face><i class="fa-regular fa-face-frown"></i>'
 
 function clearStatusClass(element) {
   element.classList.remove('correct', 'incorrect')
