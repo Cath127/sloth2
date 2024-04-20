@@ -12,10 +12,11 @@ const playAgainButton = document.getElementById('play-again-btn');
 //Variables for game function
 let currentQuestion = 0;
 let score = 0;
-let questionCounter = 0;
+// let questionCounter = 0;
 
 // let shuffledQuestions, currentQuestionIndex;
 
+// Start quiz and display next question when buttons are clicked.//
 startButton.addEventListener('click', startQuiz);
 nextButton.addEventListener('click', () => {
   currentQuestion++
