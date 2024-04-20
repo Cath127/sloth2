@@ -1,3 +1,4 @@
+//Selection of required elements
 const startButton = document.getElementById('start-btn');
 const rulesButton = document.getElementById('open-modal');
 const homeContainer = document.getElementById('home-container');
@@ -5,8 +6,12 @@ const nextButton = document.getElementById('next-btn');
 const questionContainerElement = document.getElementById('question-container');
 const questionElement = document.getElementById('question');
 const answerButtonsElement = document.getElementById('answer-buttons');
+const resultContainerElement = document.getElementById('result-container');
+const playAgainButton = document.getElementById('play-again-btn');
 
-let shuffledQuestions, currentQuestionIndex;
+
+
+// let shuffledQuestions, currentQuestionIndex;
 
 startButton.addEventListener('click', startQuiz);
 nextButton.addEventListener('click', () => {
