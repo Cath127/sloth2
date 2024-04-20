@@ -9,7 +9,9 @@ const answerButtonsElement = document.getElementById('answer-buttons');
 const resultContainerElement = document.getElementById('result-container');
 const playAgainButton = document.getElementById('play-again-btn');
 
-
+//Variables for game function
+let currentQuestion = 0;
+let score = 0;
 
 // let shuffledQuestions, currentQuestionIndex;
 
