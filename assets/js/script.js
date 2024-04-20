@@ -12,12 +12,13 @@ const playAgainButton = document.getElementById('play-again-btn');
 //Variables for game function
 let currentQuestion = 0;
 let score = 0;
+let questionCounter = 0;
 
 // let shuffledQuestions, currentQuestionIndex;
 
 startButton.addEventListener('click', startQuiz);
 nextButton.addEventListener('click', () => {
-  currentQuestionIndex++
+  currentQuestion++
   setNextQuestion()
 });
 
@@ -26,14 +27,14 @@ function startQuiz() {
   homeContainer.classList.add('hide')
   rulesButton.classList.add('hide')
   shuffledQuestions = questions.sort(() => Math.random() - .5)
-  currentQuestionIndex = 0
+  currentQuestion = 0
   questionContainerElement.classList.remove('hide')
   setNextQuestion()
 };
 
 function setNextQuestion() {
   resetState()
-  showQuestion(shuffledQuestions[currentQuestionIndex])
+  showQuestion(shuffledQuestions[currentQuestion])
 };
 
 function showQuestion(question) {
@@ -65,7 +66,7 @@ function selectAnswer(e) {
   Array.from(answerButtonsElement.children).forEach(button => {
     setStatusClass(button, button.dataset.correct)
   })
-  if (shuffledQuestions.length > currentQuestionIndex + 1) {
+  if (shuffledQuestions.length > currentQuestion + 1) {
     nextButton.classList.remove('hide')
   } else {
     startButton.innerText = 'Restart'
