@@ -2,6 +2,7 @@
 const startButton = document.getElementById('start-btn');
 const rulesButton = document.getElementById('open-modal');
 const homeContainer = document.getElementById('home-container');
+const scoreText = document.getElementById('score-text');
 const nextButton = document.getElementById('next-btn');
 const questionContainerElement = document.getElementById('question-container');
 const questionElement = document.getElementById('question');
