@@ -3,6 +3,7 @@ const startButton = document.getElementById('start-btn');
 const rulesButton = document.getElementById('open-modal');
 const homeContainer = document.getElementById('home-container');
 const scoreText = document.getElementById('score-text');
+const scoreNumber = document.getElementById('score-number');
 const nextButton = document.getElementById('next-btn');
 const questionContainerElement = document.getElementById('question-container');
 const questionElement = document.getElementById('question');
@@ -68,7 +69,11 @@ function selectAnswer(e) {
   const selectedButton = e.target
   const correct = selectedButton.dataset.correct
  
-  
+  if(correct === 'true') {
+    score++;
+    scoreNumber.innerHTML=score;
+  }
+
   Array.from(answerButtonsElement.children).forEach(button => {
     setStatusClass(button, button.dataset.correct)
   })
