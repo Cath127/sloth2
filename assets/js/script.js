@@ -8,7 +8,8 @@ const nextButton = document.getElementById('next-btn');
 const questionContainerElement = document.getElementById('question-container');
 const questionElement = document.getElementById('question');
 const answerButtonsElement = document.getElementById('answer-buttons');
-const resultContainerElement = document.getElementById('results-container');
+const resultsContainerElement = document.getElementById('results-container');
+// const showResults = document.getElementById('results');
 const playAgainButton = document.getElementById('play-again-btn');
 
 //Variables for game function
@@ -82,8 +83,16 @@ function selectAnswer(e) {
     // startButton.classList.remove('hide')
     // resultContainerElement.classList.remove('hide');
     window.location.href = 'end.html';
+    showResults();
   }
 };
+
+function showResults() {
+  questionContainerElement.classList.add('hide')
+  resultsContainerElement.classList.remove('hide')
+  // showResults.classList.remove('hide')
+
+}
 
 //  let setStatusClass = selectAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
 
